@@ -64,6 +64,9 @@ Expected outcomes:
   or depending on Telegram's live service.
 - No skipped test is used to make a gate pass.
 
+Record dated implementation and release results in `validation.md`; keep this file as the reusable
+validation procedure.
+
 ## Scenario 1: Understand Gastto
 
 1. Open `/` in a clean browser session.
@@ -144,6 +147,41 @@ Pass conditions:
 Pass condition: the new catalog passes key and ICU-argument parity checks and renders when selected
 by a test request configuration. Shipping its localized URL, negotiation behavior, and selector
 still requires an explicit follow-up feature.
+
+## Scenario 7: Reproducible Performance
+
+Run 20 cold-cache Chromium measurements against the production static output with:
+
+- A 390-by-844-pixel viewport.
+- 1.6 Mbps download and 750 Kbps upload throughput.
+- 150 ms round-trip latency.
+- 4x CPU slowdown.
+- A fresh browser context and empty cache for every run.
+
+Measure from navigation start until both the hero value proposition and primary Telegram CTA are
+visible. At least 19 of 20 runs MUST complete within 2 seconds. Record individual timings, the pass
+count, and environment details in `validation.md`.
+
+## Scenario 8: Representative Usability Validation
+
+Recruit at least 20 representative first-time participants who have not seen the page or product
+explanation. Include the tested device mix in the evidence.
+
+1. Show the initial page for 10 seconds without assistance, hide it, and ask each participant what
+   Gastto does and where it records expenses.
+2. In a fresh attempt, ask each participant to try Gastto and time how long it takes them to find and
+   activate a Telegram CTA.
+3. Score answers against the factual product definition without prompting or revealing expected
+   wording.
+
+Pass conditions:
+
+- At least 90% correctly explain Gastto's purpose (18 of 20 for the minimum cohort).
+- At least 90% identify the linked spreadsheet outcome (18 of 20 for the minimum cohort).
+- At least 95% find and activate a Telegram CTA within 15 seconds (19 of 20 for the minimum cohort).
+
+Record anonymized participant results, counts, percentages, timings, device mix, and conclusions in
+`validation.md`.
 
 ## Release Inputs Still Requiring Product Approval
 

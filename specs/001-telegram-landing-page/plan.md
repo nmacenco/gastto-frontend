@@ -1,6 +1,6 @@
 # Implementation Plan: Telegram Marketing Landing Page
 
-**Branch**: `001-telegram-landing-page` | **Date**: 2026-09-04 | **Spec**: [spec.md](./spec.md)
+**Branch**: `specs/001-telegram-landing-page` | **Date**: 2026-09-04 | **Spec**: [spec.md](./spec.md)
 
 **Input**: Feature specification from `specs/001-telegram-landing-page/spec.md`
 
@@ -34,16 +34,18 @@ persistence
 **Testing**: Vitest 5 with React Testing Library and jsdom for component/integration behavior;
 Playwright with `@axe-core/playwright` for the critical landing-to-Telegram journey, automated
 accessibility checks, responsive checks, and keyboard behavior; manual accessibility and
-content-comprehension review
+content-comprehension review; development-only `@formatjs/icu-messageformat-parser` for deterministic
+catalog structure and argument-parity validation
 
 **Target Platform**: Static web export for the Tailwind CSS 4 browser baseline: Chrome/Edge 111+,
 Firefox 128+, and Safari 16.4+; responsive from 320 CSS pixels upward
 
 **Project Type**: Single Next.js web application
 
-**Performance Goals**: Primary value proposition and Telegram action visible within 2 seconds under
-the agreed mobile-network profile; static output with no page-specific client JavaScript unless an
-interaction proves it necessary
+**Performance Goals**: Hero value proposition and primary Telegram action visible within 2 seconds
+in at least 19 of 20 cold-cache Chromium runs at a 390-by-844-pixel viewport, 1.6 Mbps download,
+750 Kbps upload, 150 ms round-trip latency, and 4x CPU slowdown; static output with no page-specific
+client JavaScript unless an interaction proves it necessary
 
 **Constraints**: No database, authentication, API route, Axios runtime dependency, analytics,
 embedded chatbot, dashboard, or configuration UI; 200% text zoom without information loss; reduced
@@ -96,6 +98,7 @@ specs/001-telegram-landing-page/
 ├── research.md          # Phase 0 output ($speckit-plan command)
 ├── data-model.md        # Phase 1 output ($speckit-plan command)
 ├── quickstart.md        # Phase 1 output ($speckit-plan command)
+├── validation.md        # Implementation and release evidence ($speckit-implement output)
 ├── contracts/
 │   ├── landing-page-ui.md
 │   ├── i18n.md
@@ -109,8 +112,11 @@ specs/001-telegram-landing-page/
 src/
 ├── app/
 │   ├── globals.css
+│   ├── opengraph-image.tsx
 │   ├── layout.tsx
-│   └── page.tsx
+│   ├── page.tsx
+│   └── fonts/
+│       └── inter-var.woff2
 ├── components/
 │   ├── landing/
 │   │   ├── benefits-section.tsx
@@ -130,11 +136,18 @@ src/
 ├── styles/
 │   └── theme.css
 └── test/
+    ├── fixtures/
+    │   └── messages/
+    │       └── test.json
+    ├── i18n.test.ts
     ├── landing-page.test.tsx
-    └── setup.ts
+    ├── render.tsx
+    ├── setup.ts
+    └── site-config.test.ts
 
 e2e/
-└── landing.spec.ts
+├── landing.spec.ts
+└── performance.spec.ts
 
 public/
 └── brand/
@@ -142,11 +155,16 @@ public/
 messages/
 └── es.json
 
+scripts/
+└── validate-messages.mjs
+
 .env.example
 .gitignore
+README.md
 eslint.config.mjs
 global.ts
 next.config.ts
+next-env.d.ts
 package.json
 playwright.config.ts
 pnpm-lock.yaml

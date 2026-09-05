@@ -110,8 +110,10 @@ landmarks/headings, and reduced-motion behavior.
 
 **Decision**: Use Vitest 5, React Testing Library, and jsdom for synchronous rendered behavior. Use
 Playwright with `@axe-core/playwright` for the critical browser journey, automated accessibility
-checks, keyboard access, outbound-link contract, reflow, and a small device/browser matrix. Test the
-Telegram destination's href, not Telegram's service behavior.
+checks, keyboard access, outbound-link contract, reflow, and a small device/browser matrix. Use
+development-only `@formatjs/icu-messageformat-parser` in the catalog validation gate so all
+registered catalogs can be checked without rendering each route. Test the Telegram destination's
+href, not Telegram's service behavior.
 
 **Rationale**: Component tests give fast feedback on semantic contracts, while Playwright verifies
 the user-critical journey in a browser. Telegram remains an external boundary.

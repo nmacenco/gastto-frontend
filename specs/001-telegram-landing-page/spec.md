@@ -1,6 +1,6 @@
 # Feature Specification: Telegram Marketing Landing Page
 
-**Feature Branch**: Not created (no branch hook configured)
+**Feature Branch**: `specs/001-telegram-landing-page`
 
 **Created**: 2026-09-04
 
@@ -168,8 +168,9 @@ using touch, mouse, and keyboard input; verify that all information and calls to
   to action within 15 seconds of deciding to try the service.
 - **SC-004**: Every tested call to action reaches the approved Gastto Telegram bot destination across
   all supported viewport and input-method combinations.
-- **SC-005**: The primary value proposition and Telegram action become visible within 2 seconds for at
-  least 95% of visits under the agreed standard mobile-network test condition.
+- **SC-005**: In 20 cold-cache Chromium runs using a 390-by-844-pixel viewport, 1.6 Mbps download,
+  750 Kbps upload, 150 ms round-trip latency, and 4x CPU slowdown, the hero value proposition and
+  primary Telegram action both become visible within 2 seconds in at least 19 runs.
 - **SC-006**: The page completes its release accessibility review with no critical or serious barrier
   preventing a visitor from understanding Gastto or reaching Telegram.
 - **SC-007**: Content review finds zero claims that present the future database-backed configuration
