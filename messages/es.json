@@ -1,0 +1,64 @@
+{
+  "Metadata": {
+    "title": "Gastto — Registra gastos conversando",
+    "description": "Envía tus gastos por Telegram y deja que Gastto los organice en tu hoja de Google Sheets o Excel.",
+    "socialImageAlt": "Gastto convierte un mensaje de gasto en una fila organizada de una hoja de cálculo"
+  },
+  "Header": {
+    "productName": "Gastto",
+    "cta": "Probar en Telegram",
+    "ctaAccessible": "Abrir Gastto en Telegram"
+  },
+  "Hero": {
+    "eyebrow": "Tus gastos, al día sin fricción",
+    "title": "Registra tus gastos como se los contarías a alguien",
+    "description": "Escribe un mensaje en Telegram y Gastto organiza el gasto en tu hoja de Google Sheets o Excel. Sin formularios ni una nueva aplicación que aprender.",
+    "cta": "Empezar en Telegram",
+    "ctaAccessible": "Abrir Gastto en Telegram",
+    "visualLabel": "Ejemplo de un gasto organizado",
+    "message": "Café con Ana, 6,50 €",
+    "processing": "Gastto lo organiza",
+    "spreadsheet": "Alimentación · Café · 6,50 €",
+    "spreadsheetDestination": "Tu hoja de cálculo"
+  },
+  "HowItWorks": {
+    "eyebrow": "Cómo funciona",
+    "title": "De un mensaje a un registro ordenado",
+    "description": "Tres pasos sencillos para mantener tus gastos donde ya trabajas.",
+    "step1Number": "01",
+    "step1Title": "Conecta tu hoja",
+    "step1Description": "Elige la hoja de Google Sheets o el libro de Excel donde quieres organizar tus gastos.",
+    "step2Number": "02",
+    "step2Title": "Cuéntale el gasto a Gastto",
+    "step2Description": "Envía por Telegram un mensaje natural, como «Cena 24 euros».",
+    "step3Number": "03",
+    "step3Title": "Encuéntralo organizado",
+    "step3Description": "Gastto registra la información en tu hoja para que puedas seguir trabajando con ella."
+  },
+  "Benefits": {
+    "eyebrow": "Menos esfuerzo, más claridad",
+    "title": "Una forma más natural de llevar tus gastos",
+    "fastTitle": "Captura al momento",
+    "fastDescription": "Anota un gasto cuando sucede con un mensaje breve, antes de que se te olvide.",
+    "organizedTitle": "Registros ordenados",
+    "organizedDescription": "Convierte lo que escribes en información clara dentro de tu hoja.",
+    "ownershipTitle": "Tus hojas siguen contigo",
+    "ownershipDescription": "Continúa usando Google Sheets o Excel, herramientas que ya conoces y controlas."
+  },
+  "Reassurance": {
+    "title": "Telegram para conversar. Tu hoja para organizar.",
+    "description": "Al elegir una llamada a la acción abrirás Telegram. Gastto trabaja con tu hoja de Google Sheets o tu libro de Excel para registrar los gastos que le envías."
+  },
+  "FinalCta": {
+    "eyebrow": "Empieza con tu próximo gasto",
+    "title": "Haz que registrar un gasto sea tan fácil como enviar un mensaje",
+    "description": "Abre Gastto en Telegram y lleva tus registros a la hoja que ya forma parte de tu rutina.",
+    "cta": "Probar Gastto en Telegram",
+    "ctaAccessible": "Abrir Gastto en Telegram"
+  },
+  "Footer": {
+    "productName": "Gastto",
+    "tagline": "Gastos conversados, registros organizados.",
+    "copyright": "© {year, number, ::group-off} Gastto"
+  }
+}
