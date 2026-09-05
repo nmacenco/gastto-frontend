@@ -1,0 +1,64 @@
+{
+  "Metadata": {
+    "title": "TEST — Conversational expenses",
+    "description": "TEST metadata description for Telegram and spreadsheets.",
+    "socialImageAlt": "TEST social image"
+  },
+  "Header": {
+    "productName": "TEST Gastto",
+    "cta": "TEST Telegram header",
+    "ctaAccessible": "TEST Open Telegram"
+  },
+  "Hero": {
+    "eyebrow": "TEST eyebrow",
+    "title": "TEST localized hero title",
+    "description": "TEST localized hero description.",
+    "cta": "TEST Telegram hero",
+    "ctaAccessible": "TEST Open Telegram",
+    "visualLabel": "TEST expense visual",
+    "message": "TEST expense message",
+    "processing": "TEST processing",
+    "spreadsheet": "TEST A · TEST B · 1",
+    "spreadsheetDestination": "TEST spreadsheet"
+  },
+  "HowItWorks": {
+    "eyebrow": "TEST how",
+    "title": "TEST workflow title",
+    "description": "TEST workflow description.",
+    "step1Number": "01",
+    "step1Title": "TEST step one",
+    "step1Description": "TEST step one description.",
+    "step2Number": "02",
+    "step2Title": "TEST step two",
+    "step2Description": "TEST step two description.",
+    "step3Number": "03",
+    "step3Title": "TEST step three",
+    "step3Description": "TEST step three description."
+  },
+  "Benefits": {
+    "eyebrow": "TEST benefits",
+    "title": "TEST benefits title",
+    "fastTitle": "TEST fast",
+    "fastDescription": "TEST fast description.",
+    "organizedTitle": "TEST organized",
+    "organizedDescription": "TEST organized description.",
+    "ownershipTitle": "TEST ownership",
+    "ownershipDescription": "TEST ownership description."
+  },
+  "Reassurance": {
+    "title": "TEST reassurance title",
+    "description": "TEST reassurance description."
+  },
+  "FinalCta": {
+    "eyebrow": "TEST final",
+    "title": "TEST final title",
+    "description": "TEST final description.",
+    "cta": "TEST Telegram final",
+    "ctaAccessible": "TEST Open Telegram"
+  },
+  "Footer": {
+    "productName": "TEST Gastto",
+    "tagline": "TEST footer tagline.",
+    "copyright": "TEST {year, number, ::group-off}"
+  }
+}
