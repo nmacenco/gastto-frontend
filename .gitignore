@@ -1,0 +1,34 @@
+# Dependencies
+node_modules/
+
+# Next.js and generated output
+.next/
+out/
+dist/
+build/
+
+# Test output
+coverage/
+playwright-report/
+test-results/
+.playwright-deps/
+
+# Local configuration (the example is intentionally committed)
+.env*
+!.env.example
+
+# Generated next-intl declarations
+messages/*.d.json.ts
+
+# Logs and editor/OS files
+*.log
+*.tmp
+*.swp
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
